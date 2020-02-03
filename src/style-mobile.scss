@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import 'themes/netcentric/netcentric';
+
+@media all and (min-resolution: 2dppx) {
+    header section {
+        background: url('#{$path-image-title-large-2x}'), linear-gradient(-22deg, $c-primary-lighter 30%, $c-primary 100%);
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .products li {
+        float: none;
+        width: 100%;
+    }
+
+    .products li:nth-child(2n) {
+        margin-left: 0;
+    }
+
+    .products div {
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    header section {
+        height: 280px;
+        background: url('#{$path-image-title-small}'), linear-gradient(-22deg, $c-primary-lighter 30%, $c-primary 100%);
+    }
+
+    header section h1 {
+        font-size: $font-size-headline-primary;
+        font-weight: $font-weight-bolder;
+    }
+
+    main {
+        display: block;
+    }
+
+    h2 {
+        size: $font-size-headline-component;
+    }
+}
+
+@media all and (max-width: 750px) and (min-resolution: 2dppx) {
+    header section {
+        background: url('#{$path-image-title-small-2x}'), linear-gradient(-22deg, $c-primary-lighter 30%, $c-primary 100%);
+    }
+}

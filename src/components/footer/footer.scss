@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@import '../../themes/netcentric/netcentric';
+
+body > footer {
+    margin-top: $vertical-rythm-spacing-component;
+
+    @include theme-background;
+}
+
+body > footer span {
+    color: $c-secondary;
+    font-weight: $font-weight-bolder;
+}

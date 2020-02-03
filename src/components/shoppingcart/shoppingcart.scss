@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@import '../../themes/netcentric/netcentric';
+
+main article:nth-child(2) {
+    background-color: lighten($c-primary, 60%);
+    padding: 20px;
+}
+
+form th {
+    font-size: $font-size-table-header;
+    color: $c-primary;
+    font-weight: $font-weight-regular;
+    border-bottom: 1px dashed $c-secondary-darker;
+}
+
+form {
+    text-align: left;
+}
+
+.th-price {
+    padding-right: $horizontal-rythm-spacing-text;
+}
+
+.th-product {
+    width: 70%;
+}
+
+form td:first-child {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+form tbody td {
+    vertical-align: text-top;
+    border-bottom-style: 1px solid $c-secondary-darker;
+}
+
+.cart-btn {
+    @include cart-button;
+
+    padding: 2px 4px;
+}
+
+.number-products {
+    width: 40%;
+}
+
+form tfoot {
+    text-align: right;
+}
+
+form output {
+    min-width: 75px;
+}
+
+.cart-output {
+    list-style: none;
+}
+
+.cart-output li:nth-child(2) {
+    border-bottom: 1px solid $c-secondary-darker;
+}
+
+.total-price {
+    size: $font-size-final-output;
+    color: $c-primary;
+    font-weight: $font-weight-bold;
+}
+
+form tfoot td {
+    border-bottom: 1px dashed $c-secondary-darker;
+}
+
+.link-continue {
+    color: $c-primary;
+}
+
+.cart-submit-btn {
+    @include cart-button;
+}
+
+main article:nth-child(2) footer div {
+    text-align: right;
+}

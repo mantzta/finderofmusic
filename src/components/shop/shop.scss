@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@import '../../themes/netcentric/netcentric';
+
+main article:first-child {
+    width: 100%;
+    margin-right: 5%;
+}
+
+.products {
+    list-style-type: none;
+    padding: 0;
+}
+
+.products li {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: $c-secondary-darker;
+    float: left;
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 2%;
+}
+
+.products li:nth-child(2n) {
+    margin-left: 2%;
+}
+
+.products div {
+    height: 150px;
+}
+
+.products footer p {
+    float: right;
+    margin: 0;
+    font-weight: $font-weight-bold;
+}
